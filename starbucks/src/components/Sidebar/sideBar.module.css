@@ -1,0 +1,97 @@
+.container {
+  background: linear-gradient(to bottom, var(--green-light), var(--green-dark));
+  width: 35vw;
+  height: 100vh;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  text-align: center;
+  color: var(--green);
+}
+
+.title h1 {
+  font-size: 1.5em;
+}
+
+.plainText h2 {
+  text-transform: uppercase;
+}
+
+.brillar {
+  font-size: 4.5em;
+  position: relative;
+  top: -1em;
+  line-height: 1em;
+}
+
+.plainText h3 {
+  font-family: "SoDoSans";
+  position: relative;
+  top: -3em;
+  font-size: 1.3em;
+}
+
+.bold {
+  font-weight: bold;
+
+}
+
+
+
+/* STARS CSS */
+/* STAR 20px transparent */
+
+
+
+
+
+
+
+
+.star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: var(--gold);
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent; 
+  border-bottom: 35px solid var(--gold);
+  border-left: 50px solid transparent;
+  transform: rotate(35deg);
+}
+
+.star:before {
+  border-bottom: 40px solid var(--gold);
+  border-left: 15px solid transparent; 
+  border-right: 15px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -23px; 
+  left: -32px; 
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+.star:after {
+  position: absolute;
+  display: block;
+  color: var(--gold);
+  top: 2px; 
+  left: -53px; 
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent; 
+  border-bottom: 35px solid var(--gold); 
+  border-left: 50px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+} 

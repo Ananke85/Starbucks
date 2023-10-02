@@ -6,8 +6,6 @@
   align-items: center;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 1.1em 1.5em;
-  line-height: 2.1em;
-  font-weight: bold;
 
 }
 
@@ -16,6 +14,7 @@
   align-items: center;
   gap: 1.2em;
   font-size: 1em;
+  font-family: 'Archivo Black', sans-serif;
 
 }
 .links a {
