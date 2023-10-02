@@ -1,0 +1,59 @@
+.container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 1.1em 1.5em;
+  line-height: 2.1em;
+  font-weight: bold;
+
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  font-size: 1em;
+
+}
+.links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--grey-dark);
+}
+
+.links a:hover {
+  color: var(--green);
+}
+
+.links img {
+  width: 3.2em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  margin-right: 3em;
+}
+.buttons button {
+  color: var(--grey-dark);
+}
+.location {
+border: none;
+font-family: "SoDo Sans, sans-serif";
+
+}
+.location:hover {
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+.buttons .black {
+  background-color: var(--grey-dark);
+  color: white;
+}
+
+.buttons .black:hover {
+opacity: 0.8;}
