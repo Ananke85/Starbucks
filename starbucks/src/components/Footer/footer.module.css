@@ -1,0 +1,69 @@
+.container {
+  background-color: white;
+  padding: 2em 3em 3em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--grey-dark)
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button:hover {
+background-color: transparent;
+}
+.dropdown h2 {
+  font-weight: 400;
+}
+
+
+.line {
+  width: 100%;
+  border: 1px solid var(--grey-medium)
+}
+
+.media {
+  display: flex;
+  gap: 1em;
+}
+
+.media span {
+  font-size: 1.5em;
+  color: white;
+  background-color: var(--grey-dark);
+  padding: 0.4em;
+  border-radius: 2em;
+}
+
+.media span:hover {
+  cursor: pointer;
+  background-color: var(--grey-medium)
+}
+
+.contact {
+  padding-bottom: 8em;
+
+}
+.contact p:hover {
+  cursor: pointer;
+  color: var(--grey-medium)
+}
+
+.arrow {
+  position: absolute;
+  right: 3rem;
+  background-color: transparent;
+  color: var(--grey-dark);
+  border: none;
+}
+.active {
+  position: absolute;
+  right: 3rem;
+  background-color: transparent;
+  color: var(--grey-dark); 
+  border: none;
+  transform: rotate(180deg);
+}

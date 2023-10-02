@@ -2,8 +2,31 @@
   background: linear-gradient(to bottom, var(--green-light), var(--green-dark));
   width: 35vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   font-family: "Archivo Black", sans-serif;
+}
+
+.container::before {
+  content: "";
+  background-image: url(C:\Users\anank\documents\Ananke85\Starbucks\starbucks\src\assets\stars.png);
+  background-size: 87%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  z-index: 1;
+  position: absolute;
+  width: 130%;
+  height: 80%;
+  top: -1.7em;
+  left: -3.7em;
+}
+
+.container img {
+  width: 25em;
+  z-index: 2;
+  opacity: 0.6;
+  position: absolute;
+ left: 4vw;
+ bottom: 0;
 }
 
 .text {
@@ -37,22 +60,33 @@
   font-size: 1.3em;
 }
 
-.bold {
-  font-weight: bold;
+strong {
+  color: rgb(11, 53, 11);
+  font-weight: 1200;
+}
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 5em;
+  position: relative;
+  top: -4em;
+}
+
+.buttons button {
+  border-color: white;
+  z-index:5;
+}
+
+.buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 
 
+
 /* STARS CSS */
-/* STAR 20px transparent */
-
-
-
-
-
-
-
 
 .star {
   margin: 50px 0;
@@ -61,7 +95,7 @@
   color: var(--gold);
   width: 0px;
   height: 0px;
-  border-right: 50px solid transparent; 
+  border-right: 50px solid transparent;
   border-bottom: 35px solid var(--gold);
   border-left: 50px solid transparent;
   transform: rotate(35deg);
@@ -69,15 +103,15 @@
 
 .star:before {
   border-bottom: 40px solid var(--gold);
-  border-left: 15px solid transparent; 
+  border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   position: absolute;
   height: 0;
   width: 0;
-  top: -23px; 
-  left: -32px; 
+  top: -23px;
+  left: -32px;
   display: block;
-  content: '';
+  content: "";
   transform: rotate(-35deg);
 }
 
@@ -85,13 +119,13 @@
   position: absolute;
   display: block;
   color: var(--gold);
-  top: 2px; 
-  left: -53px; 
+  top: 2px;
+  left: -53px;
   width: 0px;
   height: 0px;
-  border-right: 50px solid transparent; 
-  border-bottom: 35px solid var(--gold); 
+  border-right: 50px solid transparent;
+  border-bottom: 35px solid var(--gold);
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
-  content: '';
-} 
+  content: "";
+}

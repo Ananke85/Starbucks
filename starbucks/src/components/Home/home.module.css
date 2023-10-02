@@ -1,0 +1,68 @@
+.container {
+  width: 63.82vw;
+  position: absolute;
+  left: 35vw;
+  top: 6.2em;
+  color: var(--grey-medium);
+}
+
+.container img {
+  width: 100%;
+}
+.container h2 {
+  color: var(--grey-dark)
+}
+
+.content {
+  padding: 0 4em 5em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.content h2 {
+  font-weight: 400;
+}
+
+.coffee h3 {
+  color: var(--grey-dark) ;
+}
+
+.container button {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.container button:hover {
+  background-color: var(--green-light);
+}
+
+.coffee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-between;
+gap: 2em;
+}
+
+.card {
+  width: 24em;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.card h3 {
+  color: var(--grey-dark)
+}
+
+.cardText {
+  padding: 0 1.5em 1.5em 1.5em;
+}
+.cardText h3 {
+font-weight: 400;
+}
