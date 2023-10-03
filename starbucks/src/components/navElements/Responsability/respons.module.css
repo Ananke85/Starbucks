@@ -1,0 +1,60 @@
+.container {
+  width: 63.82vw;;
+  position: absolute;
+  left: 35vw;
+  top: 6.2em;
+  color: var(--grey-medium);
+}
+
+.content {
+  padding: 1em 4em 5em 3em;
+}
+
+.respons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.card {
+  width: 23em;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+  color: var(--grey-dark);
+}
+
+.cardText {
+  padding: 0 1.5em 1.5em 1.5em;
+}
+.cardText h3 {
+  font-weight: 400;
+}
+
+.card img {
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.links span:hover {
+  color: var(--grey-dark)
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--grey-dark);
+}
+
+.line {
+  border: 0.8px solid var(--grey-medium);
+  opacity: 0.4;
+}

@@ -22,6 +22,8 @@ const Delivery = () => {
     <>
     <SidebarDelivery />
       <div className={styles.container}>
+        <div className={styles.content}>
+
         <div className={styles.intro}>
           <h2>Disfruta tu experiencia Starbucks® donde quieras</h2>
           <h3 className={styles.secondIntro}>
@@ -47,6 +49,9 @@ const Delivery = () => {
             </div>
           ))}
         </div>
+
+        </div>
+        
 
         <Footer />
       </div>

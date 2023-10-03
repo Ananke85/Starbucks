@@ -1,13 +1,16 @@
 .container {
-  width: 55vw;
+  width: 63.82vw;
   position: absolute;
   left: 35vw;
   top: 5.2em;
   color: var(--grey-medium);
-  padding: 1em 3em 5em 3em;
   display: flex;
   flex-direction: column;
   gap: 2em;
+}
+
+.content {
+  padding: 1em 4em 5em 3em;
 }
 .intro {
   width: 43em;

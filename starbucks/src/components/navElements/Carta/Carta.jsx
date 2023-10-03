@@ -18,6 +18,7 @@ const Carta = () => {
       img: carta2,
     },
   ];
+
   return (
     <>
       <SidebarCarta />

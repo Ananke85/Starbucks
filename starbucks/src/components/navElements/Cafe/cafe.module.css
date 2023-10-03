@@ -1,16 +1,24 @@
 .container {
-  width: 55vw;
+  width: 63.82vw;
   position: absolute;
   left: 35vw;
   top: 5.2em;
   color: var(--grey-medium);
-  padding: 1em 4em 5em 4em;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .container img {
-  width: 100%;
+  width: 85%;
+  position: relative;
+  left: 3em;
+  top: 1em;
+}
+.content {
+  padding: 1em 4em 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 
 .title {
@@ -34,7 +42,6 @@
 
 .cafesList {
   width: 43em;
-
 }
 
 .secondIntro {
@@ -51,16 +58,19 @@
 }
 
 .blend h3 {
-  color: var(--grey-dark)
+  color: var(--grey-dark);
 }
-
-
 
 .blendContainer {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3em;
+  gap: 2em;
+justify-content: start;
+position: relative;
+left: -3em;
 }
+
 
 .container button {
   color: var(--green);

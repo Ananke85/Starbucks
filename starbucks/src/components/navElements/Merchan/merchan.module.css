@@ -1,0 +1,64 @@
+.container {
+  width: 63.82vw;
+  position: absolute;
+  left: 35vw;
+  top: 6.2em;
+  color: var(--grey-medium);
+}
+
+.content {
+  padding: 1em 5em 5em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--grey-dark);
+}
+
+.intro h3 {
+  width: 47vw;
+  font-weight: 400;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.card img {
+  width: 100%;
+}
+
+.element {
+  margin-bottom: 1em;
+}
+.card h3 {
+  color: var(--grey-dark);
+}
+
+/* Styles for items on the left */
+.left {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.left img {
+  max-width: 50%;
+}
+.left div {
+  flex: 1;
+}
+
+/* Styles for items on the right */
+.right {
+  display: flex;
+  flex-direction: row;
+}
+.right img {
+  max-width: 50%;
+}
+.right div {
+  flex: 1;
+}
