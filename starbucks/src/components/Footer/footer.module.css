@@ -4,25 +4,34 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  color: var(--grey-dark)
+  color: var(--grey-dark);
 }
 
 .dropdown {
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr;
   align-items: center;
 }
 
 .dropdown button:hover {
-background-color: transparent;
+  background-color: transparent;
 }
 .dropdown h2 {
   font-weight: 400;
 }
 
+.expandContent {
+  grid-row: 2;
+  color: var(--grey-medium);
+}
+.itemExpanded:hover {
+  cursor: pointer;
+  color: var(--grey-dark);
+}
 
 .line {
   width: 100%;
-  border: 1px solid var(--grey-medium)
+  border: 1px solid var(--grey-medium);
 }
 
 .media {
@@ -40,30 +49,49 @@ background-color: transparent;
 
 .media span:hover {
   cursor: pointer;
-  background-color: var(--grey-medium)
+  background-color: var(--grey-medium);
 }
 
 .contact {
   padding-bottom: 8em;
-
 }
 .contact p:hover {
   cursor: pointer;
-  color: var(--grey-medium)
+  color: var(--grey-medium);
 }
 
 .arrow {
   position: absolute;
+  font-size: 1.5em;
+  right: 3rem;
+  color: var(--grey-dark);
+  border: none;
+}
+.arrow:hover {
+  background-color: var(--grey-medium);
+}
+.active {
+  position: absolute;
+  font-size: 1.5em;
   right: 3rem;
   background-color: transparent;
   color: var(--grey-dark);
   border: none;
-}
-.active {
-  position: absolute;
-  right: 3rem;
-  background-color: transparent;
-  color: var(--grey-dark); 
-  border: none;
   transform: rotate(180deg);
 }
+
+button {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button:hover {
+  position: absolute;
+  right: 3.7rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey-light);
+  width: 2em;
+  height: 2em;
+}
+

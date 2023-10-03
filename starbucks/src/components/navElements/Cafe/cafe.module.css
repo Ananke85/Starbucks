@@ -1,0 +1,72 @@
+.container {
+  width: 55vw;
+  position: absolute;
+  left: 35vw;
+  top: 5.2em;
+  color: var(--grey-medium);
+  padding: 1em 4em 5em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.container img {
+  width: 100%;
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--grey-dark);
+}
+
+.titleCafe {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--green);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.titleCafe:hover {
+  color: var(--grey-dark);
+}
+.intro {
+  width: 43em;
+}
+
+.cafesList {
+  width: 43em;
+
+}
+
+.secondIntro {
+  font-weight: 400;
+}
+
+.introBlack {
+  color: var(--grey-dark);
+}
+
+.buttonsCafe {
+  display: flex;
+  gap: 1em;
+}
+
+.blend h3 {
+  color: var(--grey-dark)
+}
+
+
+
+.blendContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.container button {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.container button:hover {
+  background-color: var(--green-light);
+}

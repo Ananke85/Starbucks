@@ -22,11 +22,10 @@
 
 .container img {
   width: 25em;
-  z-index: 2;
-  opacity: 0.6;
   position: absolute;
- left: 4vw;
- bottom: 0;
+  left: 4vw;
+  bottom: 0;
+  z-index: -1;
 }
 
 .text {
@@ -76,15 +75,12 @@ strong {
 
 .buttons button {
   border-color: white;
-  z-index:5;
+  z-index: 5;
 }
 
 .buttons button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
-
-
 
 /* STARS CSS */
 
@@ -128,4 +124,109 @@ strong {
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: "";
+}
+
+/* CSS CARTA */
+
+.containerPhoto {
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerPhoto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1; 
+  pointer-events: none; 
+}
+.containerPhoto img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+.buttonsCarta {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 5em;
+  position: relative;
+  top: -15em;
+}
+
+.buttonsCarta button {
+  border-color: white;
+  z-index: 5;
+}
+
+.buttonsCarta button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.containerPhoto h3 {
+  color: white;
+  position: relative;
+  top: -13em;
+  left: 4.5em;
+  z-index: 1;
+}
+
+/* CSS CAFE */
+
+.containerCafe {
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerCafe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1; 
+  pointer-events: none; 
+}
+.containerCafe img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.containerCafe h3 {
+  color: white;
+  position: relative;
+  top: -16em;
+  left: 4.5em;
+  z-index: 1;
+}
+
+.buttonsCafe {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 5em;
+  position: relative;
+  top: -18em;
+}
+
+.buttonsCafe button {
+  border-color: white;
+  z-index: 5;
+}
+
+.buttonsCafe button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }

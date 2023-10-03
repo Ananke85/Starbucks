@@ -1,7 +1,7 @@
 import styles from "./sidebar.module.css";
 import coffee from "../../assets/coffee.png";
 
-const Sidebar = () => {
+const SidebarHome = () => {
   return (
     <>
       <div className={styles.container}>
@@ -31,4 +31,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarHome;

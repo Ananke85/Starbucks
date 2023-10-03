@@ -1,32 +1,34 @@
 import styles from "./home.module.css";
 import banner from "../../assets/banner.jpg";
 import coffeeHome from "../../assets/coffee_home.jpg";
-import carta1 from "../../assets/carta1.png";
-import carta2 from "../../assets/carta2.png";
-import carta3 from "../../assets/carta3.jpg";
+import home1 from "../../assets/home1.png";
+import home2 from "../../assets/home2.png";
+import home3 from "../../assets/home3.jpg";
 import Footer from "../Footer/Footer";
+import SidebarHome from "../Sidebar/SidebarHome.jsx";
 
 const Home = () => {
   const news = [
     {
       title: "Carta",
       text: "Bebidas deliciosas y alimentos de gran sabor elaborados con ingredientes sencillos pero de gran calidad.",
-      img: carta1,
+      img: home1,
     },
     {
       title: "Tiendas Starbucks®",
       text: "Encuentra tu tienda Starbucks® más cercana, ¡te esperamos!",
-      img: carta2,
+      img: home2,
     },
     {
       title: "Cómo preparar café Starbucks®",
       text: "Descubre los distintos métodos de elaboración para preparar tu café Starbucks® perfecto en casa.",
-      img: carta3,
+      img: home3,
     },
   ];
 
   return (
     <>
+    <SidebarHome />
       <div className={styles.container}>
         <img src={banner} alt="pumpkin spice latte is back" />
 

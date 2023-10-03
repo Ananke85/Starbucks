@@ -9,13 +9,11 @@ import Delivery from "./components/navElements/Delivery/Delivery";
 import Responsability from "./components/navElements/Responsability/Responsability";
 import Merchandising from "./components/navElements/Merchan/Merchan";
 import Rewards from "./components/navElements/Rewards/Rewards";
-import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Sidebar />
 
       <Routes>
         <Route path={HOME} element={<Home />} />

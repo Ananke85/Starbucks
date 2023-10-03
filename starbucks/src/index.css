@@ -14,16 +14,15 @@
   -webkit-text-size-adjust: 100%;
 
   --grey-dark: #1f1f1f;
-  --grey-medium: #6C6C6C;
+  --grey-medium: #6c6c6c;
   --grey-light: #f7f7f7;
   --green: #00643c;
   --green-light: #e6ede9;
   --green-medium: #3e8056;
   --green-dark: #71867d;
   --gold: #d39f3d;
-
+  --filter: rgba(0, 0, 0, 0.4);
 }
-
 
 body {
   margin: 0;
@@ -36,7 +35,14 @@ h1 {
   line-height: 1.1;
 }
 
-p{
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.2em;
+}
+
+p {
   font-size: 0.9em;
 }
 strong {
@@ -49,12 +55,11 @@ button {
   width: fit-content;
   padding: 0.3em 1em;
   font-size: 1em;
-  letter-spacing: -.014rem;
+  letter-spacing: -0.014rem;
   background-color: transparent;
   font-weight: 600;
   cursor: pointer;
   font-family: "SoDoSans, sans-serif";
-
 }
 button:hover {
   background-color: var(--grey-light);
