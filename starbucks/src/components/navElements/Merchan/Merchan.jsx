@@ -117,8 +117,8 @@ const Merchandising = () => {
               POR CADA BEBIDA PERFECTA HAY UNA TAZA PERFECTA.
             </h3>
             <h3>
-              Sea cual sea tu bebida favorita. Fría o caliente; Con nata o sin
-              nata; Tamaño short, Tall, Grande o Venti… tenemos algo para ti;
+              Sea cual sea tu bebida favorita. Fría o caliente. Con nata o sin
+              nat. Tamaño short, Tall, Grande o Venti… tenemos algo para ti.
               disfruta de nuestros vasos reutilizables, tazas, termos y Cold
               Cups vayas donde vayas. <br></br>
               <br></br>Además, cada vez que los uses en nuestras tiendas

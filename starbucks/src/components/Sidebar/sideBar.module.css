@@ -70,7 +70,7 @@ strong {
   gap: 1em;
   margin-left: 5em;
   position: relative;
-  top: -4em;
+  top: -5em;
 }
 
 .buttons button {
@@ -239,7 +239,6 @@ strong {
   font-family: "Archivo Black", sans-serif;
   background-color: var(--green-medium);
   overflow: hidden;
-
 }
 
 .containerResp::before {
@@ -270,9 +269,7 @@ strong {
   z-index: 2;
 }
 
-
 /* CSS MERCHANDISING */
-
 
 .containerMerchan {
   width: 35vw;

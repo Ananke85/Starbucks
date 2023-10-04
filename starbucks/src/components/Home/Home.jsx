@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <>
-    <SidebarHome />
+      <SidebarHome />
       <div className={styles.container}>
         <img src={banner} alt="pumpkin spice latte is back" />
 
