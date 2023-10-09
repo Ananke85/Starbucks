@@ -35,31 +35,33 @@ const Responsability = () => {
   ];
   return (
     <>
-      <SidebarResp />
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <h3 className={styles.title}>RESPONSABILIDAD</h3>
-          <div className={styles.respons}>
-            {responsabilities.map((item, index) => (
-              <div key={index} className={styles.card}>
-                <img src={item.img} />
-                <div className={styles.cardText}>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <div className={styles.line}></div>
-                  {item.link.map((li) => (
-                    <div key={li} className={styles.links}>
-                      <p className={styles.greenText}>{li}</p>
-                      <span className="icon-new-tab"></span>
-                    </div>
-                  ))}
+      <div className={styles.mainContainer}>
+        <SidebarResp />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h3 className={styles.title}>RESPONSABILIDAD</h3>
+            <div className={styles.respons}>
+              {responsabilities.map((item, index) => (
+                <div key={index} className={styles.card}>
+                  <img src={item.img} />
+                  <div className={styles.cardText}>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <div className={styles.line}></div>
+                    {item.link.map((li) => (
+                      <div key={li} className={styles.links}>
+                        <p className={styles.greenText}>{li}</p>
+                        <span className="icon-new-tab"></span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     </>
   );

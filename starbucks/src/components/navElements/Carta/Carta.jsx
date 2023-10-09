@@ -21,40 +21,42 @@ const Carta = () => {
 
   return (
     <>
-      <SidebarCarta />
+      <div className={styles.mainContainer}>
+        <SidebarCarta />
 
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.intro}>
-            <h3>
-              Bebidas deliciosas y artesanales. Alimentos de gran sabor,
-              elaborados con ingredientes sencillos pero de gran calidad. El
-              café está en nuestro corazón, y también lo están todas las formas
-              en las que te llevamos la experiencia Starbucks®, estés donde
-              estés.
-            </h3>
-            <h3 className={styles.secondIntro}>
-              Tanto si se trata de tu taza de café favorita para empezar el día
-              como de un bocado rápido para animarte, tenemos algo preparado
-              para ti. ¡Descúbrelo!
-            </h3>
-          </div>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <div className={styles.intro}>
+              <h3>
+                Bebidas deliciosas y artesanales. Alimentos de gran sabor,
+                elaborados con ingredientes sencillos pero de gran calidad. El
+                café está en nuestro corazón, y también lo están todas las
+                formas en las que te llevamos la experiencia Starbucks®, estés
+                donde estés.
+              </h3>
+              <h3 className={styles.secondIntro}>
+                Tanto si se trata de tu taza de café favorita para empezar el
+                día como de un bocado rápido para animarte, tenemos algo
+                preparado para ti. ¡Descúbrelo!
+              </h3>
+            </div>
 
-          <div className={styles.news}>
-            {news.map((item, index) => (
-              <div key={index} className={styles.card}>
-                <img src={item.img} />
-                <div className={styles.cardText}>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <button>Más información</button>
+            <div className={styles.news}>
+              {news.map((item, index) => (
+                <div key={index} className={styles.card}>
+                  <img src={item.img} />
+                  <div className={styles.cardText}>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <button>Más información</button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     </>
   );

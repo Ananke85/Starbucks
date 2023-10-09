@@ -95,121 +95,109 @@ const Rewards = () => {
 
   return (
     <>
-      <SidebarHome />
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <h2>Descarga la app Starbucks® Rewards</h2>
-          <h3>
-            Accede a un universo de beneficios y haz que tus días brillen más
-          </h3>
-          <h2>Acumula estrellas y consigue bebidas gratis</h2>
-          {rewards.map((reward, index) => (
-            <div key={index} className={styles.reward}>
-              <img src={reward.img} />
-              <div className={styles.text}>
-                <h3>{reward.title}</h3>
-                {reward.text.map((rew, subIndex) => (
-                  <div key={subIndex}>{rew}</div>
-                ))}
-              </div>
-              <div className={styles.line}></div>
-            </div>
-          ))}
-
-          <div className={styles.starReward}>
-            <h4>DESCARGA LA APP STARBUCKS® REWARDS ESPAÑA</h4>
-            <div className={styles.starContainer}>
-              <img src={star} />
-              <div className={styles.star}>
-                <h3>Haz que tus días brillen más</h3>
-                <p>
-                  Descubre un universo de beneficios con la app Starbucks®
-                  Rewards España
-                </p>
-                <button>Descarga la app</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.application}>
-          <h2>Una aplicación muy intuitiva</h2>
-          <p>
-            Comprueba las estrellas acumuladas y tus recompensas conseguidas.
-            Descarga la app de Starbucks® Rewards ahora y haz que tus días
-            brillen más.
-            <br></br>
-            <br></br>Consulta aquí el{" "}
-            <strong>Listado de tiendas no participantes</strong>
-          </p>
-
-          <div className={styles.steps}>
-            {steps.map((step, index) => (
-              <div key={index} className={styles.stepContainer}>
-                <div
-                  className={`${styles.step} ${
-                    index !== selectedStep ? styles.inactiveStep : ""
-                  }`}
-                >
-                  <img src={step.img} onClick={() => handleStepClick(index)} />
-                  <h3>{step.title}</h3>
+      <div className={styles.mainContainer}>
+        <SidebarHome />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h2>Descarga la app Starbucks® Rewards</h2>
+            <h3>
+              Accede a un universo de beneficios y haz que tus días brillen más
+            </h3>
+            <h2>Acumula estrellas y consigue bebidas gratis</h2>
+            {rewards.map((reward, index) => (
+              <div key={index} className={styles.reward}>
+                <img src={reward.img} />
+                <div className={styles.text}>
+                  <h3>{reward.title}</h3>
+                  {reward.text.map((rew, subIndex) => (
+                    <div key={subIndex}>{rew}</div>
+                  ))}
                 </div>
-                {selectedStep === index && (
-                  <div className={styles.stepLine}></div>
-                )}
+                <div className={styles.line}></div>
               </div>
             ))}
-          </div>
-        </div>
 
-        {selectedStep !== null && (
-          <div className={styles.selectedStepContent}>
-            <img src={steps[selectedStep].content.img} />
-            <div className={styles.rewContent}>
-              <h3>{steps[selectedStep].content.title}</h3>
-              <p>{steps[selectedStep].content.text}</p>
-              <div className={styles.buttons}>
-                {steps[selectedStep].content.buttons.map((button, index) => (
-                  <button key={index}>{button}</button>
-                ))}
+            <div className={styles.starReward}>
+              <h4>DESCARGA LA APP STARBUCKS® REWARDS ESPAÑA</h4>
+              <div className={styles.starContainer}>
+                <img src={star} />
+                <div className={styles.star}>
+                  <h3>Haz que tus días brillen más</h3>
+                  <p>
+                    Descubre un universo de beneficios con la app Starbucks®
+                    Rewards España
+                  </p>
+                  <button>Descarga la app</button>
+                </div>
               </div>
             </div>
           </div>
-        )}
 
-        <div className={styles.faqContainer}>
-          <h2>¿Tienes alguna pregunta?</h2>
-          <h3>
-            Podrás preguntarle todas tus dudas a tu barista o ver las preguntas
-            más frecuentes aquí.
-          </h3>
-          <div className={styles.faq}>
-            {buttons.map((el, index) => (
-              <button key={index}>{el}</button>
-            ))}
+          <div className={styles.application}>
+            <h2>Una aplicación muy intuitiva</h2>
+            <p>
+              Comprueba las estrellas acumuladas y tus recompensas conseguidas.
+              Descarga la app de Starbucks® Rewards ahora y haz que tus días
+              brillen más.
+              <br></br>
+              <br></br>Consulta aquí el{" "}
+              <strong>Listado de tiendas no participantes</strong>
+            </p>
+
+            <div className={styles.steps}>
+              {steps.map((step, index) => (
+                <div key={index} className={styles.stepContainer}>
+                  <div
+                    className={`${styles.step} ${
+                      index !== selectedStep ? styles.inactiveStep : ""
+                    }`}
+                  >
+                    <img
+                      src={step.img}
+                      onClick={() => handleStepClick(index)}
+                    />
+                    <h3>{step.title}</h3>
+                  </div>
+                  {selectedStep === index && (
+                    <div className={styles.stepLine}></div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
+
+          {selectedStep !== null && (
+            <div className={styles.selectedStepContent}>
+              <img src={steps[selectedStep].content.img} />
+              <div className={styles.rewContent}>
+                <h3>{steps[selectedStep].content.title}</h3>
+                <p>{steps[selectedStep].content.text}</p>
+                <div className={styles.buttons}>
+                  {steps[selectedStep].content.buttons.map((button, index) => (
+                    <button key={index}>{button}</button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className={styles.faqContainer}>
+            <h2>¿Tienes alguna pregunta?</h2>
+            <h3>
+              Podrás preguntarle todas tus dudas a tu barista o ver las
+              preguntas más frecuentes aquí.
+            </h3>
+            <div className={styles.faq}>
+              {buttons.map((el, index) => (
+                <button key={index}>{el}</button>
+              ))}
+            </div>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );
 };
 
 export default Rewards;
-
-{
-  /* <div className={styles.steps}>
-            <div className={styles.step}>
-              <img src={account} />
-              <h3>Crea tu cuenta</h3>
-            </div>
-            <div className={styles.step}>
-              <img src={verification} />
-              <h3>Verifica tu cuenta</h3>
-            </div>
-            <div className={styles.step}>
-              <img src={prize} />
-              <h3>Acumula estrellas y gana recompensas</h3>
-            </div>
-          </div> */
-}

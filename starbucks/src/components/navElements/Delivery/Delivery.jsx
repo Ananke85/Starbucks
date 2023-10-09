@@ -20,40 +20,40 @@ const Delivery = () => {
 
   return (
     <>
-    <SidebarDelivery />
-      <div className={styles.container}>
-        <div className={styles.content}>
-
-        <div className={styles.intro}>
-          <h2>Disfruta tu experiencia Starbucks® donde quieras</h2>
-          <h3 className={styles.secondIntro}>
-            ¿Eres más de café, de smoothie, de latte o de Frappuccino®? ¡No
-            esperes más y pide Starbucks a domicilio o para llevar! <br></br>
-            <br></br>En Starbucks queremos estar cerca de ti y por eso te
-            llevamos tus productos favoritos y tu café Starbucks® a domicilio.{" "}
-            <br></br>
-            <br></br>¡Empieza a disfrutar de todos nuestros productos Starbucks®
-            donde quieras!
-          </h3>
-        </div>
-
-        <div className={styles.delivers}>
-          {delivers.map((item, index) => (
-            <div key={index} className={styles.card}>
-              <img src={item.img} />
-              <div className={styles.cardText}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <button>Pide ahora</button>
-              </div>
+      <div className={styles.mainContainer}>
+        <SidebarDelivery />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <div className={styles.intro}>
+              <h2>Disfruta tu experiencia Starbucks® donde quieras</h2>
+              <h3 className={styles.secondIntro}>
+                ¿Eres más de café, de smoothie, de latte o de Frappuccino®? ¡No
+                esperes más y pide Starbucks a domicilio o para llevar!{" "}
+                <br></br>
+                <br></br>En Starbucks queremos estar cerca de ti y por eso te
+                llevamos tus productos favoritos y tu café Starbucks® a
+                domicilio. <br></br>
+                <br></br>¡Empieza a disfrutar de todos nuestros productos
+                Starbucks® donde quieras!
+              </h3>
             </div>
-          ))}
-        </div>
 
-        </div>
-        
+            <div className={styles.delivers}>
+              {delivers.map((item, index) => (
+                <div key={index} className={styles.card}>
+                  <img src={item.img} />
+                  <div className={styles.cardText}>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <button>Pide ahora</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
     </>
   );

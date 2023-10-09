@@ -109,45 +109,47 @@ const Merchandising = () => {
   ];
   return (
     <>
-      <SidebarMerchan />
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.intro}>
-            <h3 className={styles.title}>
-              POR CADA BEBIDA PERFECTA HAY UNA TAZA PERFECTA.
-            </h3>
-            <h3>
-              Sea cual sea tu bebida favorita. Fría o caliente. Con nata o sin
-              nat. Tamaño short, Tall, Grande o Venti… tenemos algo para ti.
-              disfruta de nuestros vasos reutilizables, tazas, termos y Cold
-              Cups vayas donde vayas. <br></br>
-              <br></br>Además, cada vez que los uses en nuestras tiendas
-              Starbucks® te descontamos +0,40cts por ayudarnos a reducir el uso
-              de envases de un solo uso.{" "}
-              <strong>Reduce, reutiliza, Recicla.</strong>
-            </h3>
-          </div>
-
-          {merchandising.map((merchan, index) => (
-            <div
-              key={index}
-              className={`${styles.card} ${
-                index % 2 === 0 ? styles.right : styles.left
-              }`}
-            >
-              <img src={merchan.img} />
-              <div>
-                <h3>{merchan.title}</h3>
-                {merchan.text.map((el, subIndex) => (
-                  <div key={subIndex} className={styles.element}>
-                    {el}
-                  </div>
-                ))}
-              </div>
+      <div className={styles.mainContainer}>
+        <SidebarMerchan />
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <div className={styles.intro}>
+              <h3 className={styles.title}>
+                POR CADA BEBIDA PERFECTA HAY UNA TAZA PERFECTA.
+              </h3>
+              <h3>
+                Sea cual sea tu bebida favorita. Fría o caliente. Con nata o sin
+                nat. Tamaño short, Tall, Grande o Venti… tenemos algo para ti.
+                disfruta de nuestros vasos reutilizables, tazas, termos y Cold
+                Cups vayas donde vayas. <br></br>
+                <br></br>Además, cada vez que los uses en nuestras tiendas
+                Starbucks® te descontamos +0,40cts por ayudarnos a reducir el
+                uso de envases de un solo uso.{" "}
+                <strong>Reduce, reutiliza, Recicla.</strong>
+              </h3>
             </div>
-          ))}
+
+            {merchandising.map((merchan, index) => (
+              <div
+                key={index}
+                className={`${styles.card} ${
+                  index % 2 === 0 ? styles.right : styles.left
+                }`}
+              >
+                <img src={merchan.img} />
+                <div>
+                  <h3>{merchan.title}</h3>
+                  {merchan.text.map((el, subIndex) => (
+                    <div key={subIndex} className={styles.element}>
+                      {el}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );

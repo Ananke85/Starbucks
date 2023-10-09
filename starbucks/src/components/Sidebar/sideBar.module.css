@@ -59,9 +59,10 @@
   font-size: 1.3em;
 }
 
-strong {
+.plainText strong {
   color: rgb(11, 53, 11);
   font-weight: 1200;
+  text-decoration: none;
 }
 
 .buttons {
@@ -212,6 +213,14 @@ strong {
   z-index: 1;
 }
 
+.containerCafe h2 {
+  color: white;
+  position: relative;
+  top: -11em;
+  left: 3em;
+  z-index: 1;
+  }
+
 .buttonsCafe {
   display: flex;
   flex-direction: column;
@@ -221,7 +230,9 @@ strong {
   top: -18em;
 }
 
-.buttonsCafe button {
+.buttonsCafe button,
+.buttonsCafe a {
+  color: white; 
   border-color: white;
   z-index: 5;
 }
@@ -229,6 +240,10 @@ strong {
 .buttonsCafe button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+
+
 
 /* CSS RESPONSABILIDAD */
 

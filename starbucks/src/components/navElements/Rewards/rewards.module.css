@@ -1,9 +1,16 @@
+.mainContainer {
+  height: 700px;
+  overflow-y: hidden;
+  z-index: -1;
+}
 .container {
-  width: 63.82vw;
+  width: 65vw;
   position: absolute;
   left: 35vw;
   top: 6.2em;
   color: var(--grey-medium);
+  overflow-y: auto;
+  max-height: 700px;
 }
 
 .content {
@@ -77,7 +84,7 @@
   background-color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2)
 }
-strong {
+.application strong {
   text-decoration: underline;
 }
 
@@ -107,6 +114,7 @@ strong {
 
 .inactiveStep {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .selectedStepContent {

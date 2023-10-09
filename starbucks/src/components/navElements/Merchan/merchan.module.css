@@ -1,9 +1,16 @@
+.mainContainer {
+  height: 700px;
+  overflow-y: hidden;
+  z-index: -1;
+}
 .container {
-  width: 63.82vw;
+  width: 65vw;
   position: absolute;
   left: 35vw;
   top: 6.2em;
   color: var(--grey-medium);
+  overflow-y: auto;
+  max-height: 700px;
 }
 
 .content {
