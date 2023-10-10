@@ -40,7 +40,6 @@
 }
 
 .box {
-  
   max-width: 25em;
   padding: 10px;
   border: none;
@@ -54,7 +53,7 @@
 }
 
 .box:focus {
-  border-bottom: 2px solid var(--green-hover); 
+  border-bottom: 2px solid var(--green-hover);
 }
 
 .password {
@@ -67,7 +66,6 @@
 .password .box {
   width: 25em;
 }
-
 
 .casilla {
   display: flex;
@@ -114,11 +112,53 @@
   top: -2em;
 }
 
-.inputs span {
+.password span {
   color: var(--green);
   font-size: 2em;
 }
 
+/* CSS REGISTER */
 
+.contentRegister {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: center;
+  margin-top: 7em;
+  margin-left: 5em;
+  margin-bottom: 3em;
+}
+.casilla label {
+  font-size: 0.9em;
+}
+.privacy {
+  font-size: 0.9em;
+  position: relative;
+  top: 1em;
+}
 
+.privacy strong {
+  color: var(--green);
+  text-decoration: underline;
+  font-weight: normal;
+}
 
+.privacy strong:hover {
+  text-decoration: none;
+}
+
+input .check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--green);
+  background-color: transparent;
+}
+
+.error {
+  color: red;
+  display: flex;
+  gap: 0.5em;
+  position: relative;
+  top: -2em;
+}

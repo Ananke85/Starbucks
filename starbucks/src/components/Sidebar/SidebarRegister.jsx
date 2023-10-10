@@ -1,13 +1,13 @@
 import styles from "./sideBar.module.css";
 
-const SidebarLogin = () => {
+const SidebarRegister = () => {
   return (
     <>
       <div className={styles.containerLogin}>
-        <h2>Inicia sesión</h2>
+        <h2>Crear una cuenta</h2>
       </div>
     </>
   );
 };
 
-export default SidebarLogin;
+export default SidebarRegister;

@@ -13,7 +13,6 @@ import {
   CREATE,
   DELIVERY,
   HOME,
-  LOCATION,
   LOGIN,
   MERCHAN,
   RESP,
@@ -31,6 +30,7 @@ import CafeIntenso from "./components/navElements/Cafe/CafeIntenso";
 import Bebidas from "./components/navElements/Carta/Bebidas";
 import Comidas from "./components/navElements/Carta/Comidas";
 import Login from "./components/navElements/Login/Login";
+import Register from "./components/navElements/Login/Register";
 
 function App() {
   return (
@@ -56,7 +56,7 @@ function App() {
 
           {/* <Route path={LOCATION} element={<Store />} /> */}
           <Route path={LOGIN} element={<Login />} />
-          {/* <Route path={CREATE} element={<Register />} /> */}
+          <Route path={CREATE} element={<Register />} />
         </Routes>
       </div>
     </>

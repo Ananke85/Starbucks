@@ -50,9 +50,9 @@ const Login = () => {
                 <div className={styles.password}>
                   <input
                     type={passwordVisible ? "text" : "password"}
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     {...register("password", {
-                      required: "Password is required",
+                      required: "La contraseña es obligatoria",
                     })}
                     className={styles.box}
                     name="password"
@@ -72,13 +72,14 @@ const Login = () => {
                     ></span>
                   )}
 
-                  {errors.password && (
+                  
+                </div>
+                {errors.password && (
                     <p className={styles.error}>
                       <span className="icon-warning1"></span>
                       {errors.password.message}
                     </p>
                   )}
-                </div>
               </div>
 
               <div className={styles.details}>
