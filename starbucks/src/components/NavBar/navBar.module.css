@@ -39,6 +39,10 @@
 .buttons button {
   color: var(--grey-dark);
 }
+
+.buttons a {
+  text-decoration: none;
+}
 .location {
   border: none;
   font-family: "SoDo Sans, sans-serif";

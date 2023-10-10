@@ -1,0 +1,124 @@
+.mainContainer {
+  height: 700px;
+  overflow-y: hidden;
+  z-index: -1;
+}
+
+.container {
+  width: 65vw;
+  position: absolute;
+  left: 35vw;
+  top: 6.2em;
+  color: var(--grey-medium);
+  overflow-y: auto;
+  max-height: 700px;
+}
+
+.container h3 {
+  color: var(--grey-dark);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  height: 700px;
+  margin-top: 7em;
+}
+
+.sectionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 35em;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.box {
+  
+  max-width: 25em;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--grey-medium);
+  font-size: 1.2em;
+  outline: none;
+  background-color: transparent;
+  color: var(--grey-dark);
+  font-weight: bold;
+  transition: border-color 0.2s;
+}
+
+.box:focus {
+  border-bottom: 2px solid var(--green-hover); 
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  width: 35em;
+}
+
+.password .box {
+  width: 25em;
+}
+
+
+.casilla {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.check:checked {
+  background-color: var(--green);
+  border: none;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.underline {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+.details button {
+  background-color: var(--green);
+  border: none;
+  font-size: 1.5em;
+  margin-left: 9.5em;
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.details button:hover {
+  background-color: var(--green-hover);
+}
+
+.error {
+  color: red;
+  display: flex;
+  gap: 0.5em;
+  position: relative;
+  top: -2em;
+}
+
+.inputs span {
+  color: var(--green);
+  font-size: 2em;
+}
+
+
+
+

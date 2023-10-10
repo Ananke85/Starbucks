@@ -35,6 +35,8 @@ const CafeIntenso = () => {
       img: intenso3,
     },
   ];
+
+  
   return (
     <>
       <div className={styles.mainContainer}>

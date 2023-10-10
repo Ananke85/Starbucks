@@ -5,6 +5,7 @@ import {
   CARTA,
   DELIVERY,
   HOME,
+  LOGIN,
   MERCHAN,
   RESP,
   REWARDS,
@@ -29,7 +30,7 @@ const NavBar = () => {
 
         <div className={styles.buttons}>
           <button className={styles.location}><span className="icon-location1"></span>  Encuéntranos</button>
-          <button>Inicia Sesión</button>
+          <Link to={LOGIN}><button>Inicia Sesión</button></Link>
           <button className={styles.black}>Únete Ahora</button>
 
         </div>

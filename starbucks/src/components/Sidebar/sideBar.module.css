@@ -219,7 +219,7 @@
   top: -11em;
   left: 3em;
   z-index: 1;
-  }
+}
 
 .buttonsCafe {
   display: flex;
@@ -232,7 +232,7 @@
 
 .buttonsCafe button,
 .buttonsCafe a {
-  color: white; 
+  color: white;
   border-color: white;
   z-index: 5;
 }
@@ -240,10 +240,6 @@
 .buttonsCafe button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
-
-
-
 
 /* CSS RESPONSABILIDAD */
 
@@ -316,4 +312,20 @@
   top: -12em;
   left: 4.5em;
   z-index: 1;
+}
+
+/* CSS LOGIN/REGISTER */
+
+.containerLogin {
+  background-color: var(--green-light);
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.containerLogin h2 {
+  padding-left: 4em;
 }
