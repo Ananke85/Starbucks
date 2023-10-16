@@ -1,6 +1,7 @@
 import styles from "./sideBar.module.css";
 import cafe from "../../assets/cafe.png";
 import pdf from "../../assets/InformacionFall23_ESP.pdf";
+import { ELABORAR } from "../../route-paths";
 
 const SidebarCafe = () => {
   return (
@@ -10,8 +11,13 @@ const SidebarCafe = () => {
 
         <h3>NUESTROS CAFÉS</h3>
         <div className={styles.buttonsCafe}>
-          <button>Cómo preparar café Starbucks®</button>
-          {/* <button>Autumn Blend</button> */}
+          <a
+            href={ELABORAR}
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <button>Cómo preparar café Starbucks®</button>
+          </a>
           <a
             href={pdf}
             target="_blank"

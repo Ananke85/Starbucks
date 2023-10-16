@@ -19,19 +19,35 @@ const Register = () => {
     setPasswordVisible(!passwordVisible);
   };
 
+  const numbers = Array.from({ length: 31 }, (_, i) => i + 1);
+  const months = [
+    { value: 1, label: "Enero" },
+    { value: 2, label: "Febrero" },
+    { value: 3, label: "Marzo" },
+    { value: 4, label: "Abril" },
+    { value: 5, label: "Mayo" },
+    { value: 6, label: "Junio" },
+    { value: 7, label: "Julio" },
+    { value: 8, label: "Agosto" },
+    { value: 9, label: "Septiembre" },
+    { value: 10, label: "Octubre" },
+    { value: 11, label: "Noviembre" },
+    { value: 12, label: "Diciembre" },
+  ];
+
   return (
     <>
       <div className={styles.mainContainer}>
         <SidebarRegister />
 
-        <div className={styles.container}>
+        <div className={styles.containerRegister}>
           <div className={styles.contentRegister}>
             <form
               onSubmit={handleSubmit(onSubmit)}
               className={styles.sectionForm}
             >
               <div className={styles.inputs}>
-              <h3>INFORMACIÓN PERSONAL</h3>
+                <h3>INFORMACIÓN PERSONAL</h3>
                 <input
                   type="text"
                   placeholder="Nombre"
@@ -104,15 +120,61 @@ const Register = () => {
                       onClick={togglePasswordVisibility}
                     ></span>
                   )}
-
-                  
                 </div>
                 {errors.password && (
+                  <p className={styles.error}>
+                    <span className="icon-warning1"></span>
+                    {errors.password.message}
+                  </p>
+                )}
+
+                <h3>CUMPLEAÑOS</h3>
+                <div className={styles.doubleColumn}>
+                  <select
+                    {...register("day", {
+                      required: "Selecciona un día",
+                    })}
+                    className={styles.box}
+                    name="day"
+                  >
+                    <option value="">Día</option>
+                    {numbers.map((number) => (
+                      <option key={number} value={number}>
+                        {number}
+                      </option>
+                    ))}
+                  </select>
+
+                  <select
+                    {...register("month", {
+                      required: "Selecciona un mes",
+                    })}
+                    className={styles.box}
+                    name="month"
+                  >
+                    <option value="">Mes</option>
+                    {months.map((month) => (
+                      <option key={month.value} value={month.value}>
+                        {month.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className={styles.doubleColumn}>
+                  {errors.day && (
                     <p className={styles.error}>
                       <span className="icon-warning1"></span>
-                      {errors.password.message}
+                      {errors.day.message}
                     </p>
                   )}
+                  {errors.month && (
+                    <p className={styles.error}>
+                      <span className="icon-warning1"></span>
+                      {errors.month.message}
+                    </p>
+                  )}
+                </div>
               </div>
 
               <div className={styles.details}>

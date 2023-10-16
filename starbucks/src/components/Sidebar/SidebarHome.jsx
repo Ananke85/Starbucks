@@ -1,5 +1,6 @@
 import styles from "./sidebar.module.css";
 import coffee from "../../assets/coffee.png";
+import { REWARDS } from "../../route-paths";
 
 const SidebarHome = () => {
   return (
@@ -20,12 +21,20 @@ const SidebarHome = () => {
               consigue bebidas gratis.
             </h3>
           </div>
+          <img src={coffee} alt="coffee app rewards" />
+
         </div>
         <div className={styles.buttons}>
           <button>Descarga la APP</button>
-          <button>Descubre Starbucks Rewards</button>
+
+          <a
+            href={REWARDS}
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <button>Descubre Starbucks Rewards</button>
+          </a>
         </div>
-        <img src={coffee} alt="coffee app rewards" />
       </div>
     </>
   );

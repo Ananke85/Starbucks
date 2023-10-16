@@ -60,3 +60,22 @@
 .buttons .black:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons {
+    width: 100%;
+    padding-left: 3em;
+    padding-top: 1em;
+  }
+}

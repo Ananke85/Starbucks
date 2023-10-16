@@ -14,6 +14,7 @@ export const CREATE = "/account/create"
 export const CAFE_SUAVE =  "/nuestro-cafe/tostado-suave"
 export const CAFE_MEDIO =  "/nuestro-cafe/tostado-medio"
 export const CAFE_OSCURO =  "/nuestro-cafe/tostado-oscuro"
+export const ELABORAR = "/nuestro-cafe/como-elaborar"
 
 export const BEBIDAS = "/carta/bebidas"
 export const COMIDAS = "/carta/comidas"

@@ -85,3 +85,25 @@
 }
 
 
+@media (max-width: 1200px) {
+  .mainContainer {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 2;
+  }
+  .container {
+    width: 100vw;
+    left: 0;
+    top: 550px;
+    overflow-x: hidden;
+  }
+  .content {
+    width: 90%;
+  }
+  .news {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}

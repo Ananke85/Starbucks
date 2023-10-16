@@ -117,7 +117,19 @@
   font-size: 2em;
 }
 
+
+
 /* CSS REGISTER */
+
+.containerRegister {
+  width: 65vw;
+  position: absolute;
+  left: 35vw;
+  top: 6.2em;
+  color: var(--grey-medium);
+  overflow-y: auto;
+  max-height: 700px;
+}
 
 .contentRegister {
   width: 75%;
@@ -125,7 +137,7 @@
   flex-direction: column;
   gap: 5em;
   align-items: center;
-  margin-top: 7em;
+  margin-top: 3em;
   margin-left: 5em;
   margin-bottom: 3em;
 }
@@ -148,17 +160,50 @@
   text-decoration: none;
 }
 
-input .check {
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--green);
-  background-color: transparent;
-}
-
 .error {
   color: red;
   display: flex;
   gap: 0.5em;
   position: relative;
   top: -2em;
+}
+
+.inputs h3 {
+  color: var(--grey-medium);
+}
+
+.doubleColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+
+
+@media (max-width: 1200px) {
+  .mainContainer {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 2;
+  }
+  .container {
+    width: 100vw;
+    left: 0;
+    top: 300px;
+    overflow-x: hidden;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerRegister {
+    width: 100vw;
+    left: 0;
+    top: 550px;
+    overflow-x: hidden;
+  }
+  
 }

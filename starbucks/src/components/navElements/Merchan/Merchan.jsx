@@ -128,6 +128,7 @@ const Merchandising = () => {
                 <strong>Reduce, reutiliza, Recicla.</strong>
               </h3>
             </div>
+           
 
             {merchandising.map((merchan, index) => (
               <div

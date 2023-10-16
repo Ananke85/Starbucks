@@ -27,7 +27,7 @@ const Cafe = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-        <SidebarCafe />
+          <SidebarCafe />
 
         <div className={styles.container}>
           <img src={bolsas} alt="bolsas de variedades de cafe" />

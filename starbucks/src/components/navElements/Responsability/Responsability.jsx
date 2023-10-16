@@ -40,6 +40,7 @@ const Responsability = () => {
         <div className={styles.container}>
           <div className={styles.content}>
             <h3 className={styles.title}>RESPONSABILIDAD</h3>
+            
             <div className={styles.respons}>
               {responsabilities.map((item, index) => (
                 <div key={index} className={styles.card}>

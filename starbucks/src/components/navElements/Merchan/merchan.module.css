@@ -24,9 +24,12 @@
   font-family: "Archivo Black", sans-serif;
   color: var(--grey-dark);
 }
+.intro {
+  max-width: 40em;
+}
 
 .intro h3 {
-  width: 47vw;
+  max-width: 40em;
   font-weight: 400;
 }
 
@@ -69,3 +72,31 @@
 .right div {
   flex: 1;
 }
+
+
+
+@media (max-width: 1200px) {
+  .mainContainer {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 2;
+  }
+  .container {
+    width: 100vw;
+    left: 0;
+    top: 570px;
+    overflow-x: hidden;
+  }
+  .content {
+    width: 90%;
+  }
+  .respons {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+
+

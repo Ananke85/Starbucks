@@ -12,6 +12,7 @@ import {
   COMIDAS,
   CREATE,
   DELIVERY,
+  ELABORAR,
   HOME,
   LOGIN,
   MERCHAN,
@@ -31,6 +32,7 @@ import Bebidas from "./components/navElements/Carta/Bebidas";
 import Comidas from "./components/navElements/Carta/Comidas";
 import Login from "./components/navElements/Login/Login";
 import Register from "./components/navElements/Login/Register";
+import Elaboracion from "./components/navElements/Cafe/Elaboracion";
 
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
           <Route path={CAFE_SUAVE} element={<CafeSuave />} />
           <Route path={CAFE_MEDIO} element={<CafeMedio />} />
           <Route path={CAFE_OSCURO} element={<CafeIntenso />} />
+          <Route path={ELABORAR} element={<Elaboracion />} />
 
           <Route path={DELIVERY} element={<Delivery />} />
           <Route path={RESP} element={<Responsability />} />

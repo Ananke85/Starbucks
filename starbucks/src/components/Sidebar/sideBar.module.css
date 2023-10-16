@@ -25,7 +25,9 @@
   position: absolute;
   left: 4vw;
   bottom: 0;
-  z-index: -1;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .text {
@@ -76,7 +78,7 @@
 
 .buttons button {
   border-color: white;
-  z-index: 5;
+  z-index: 1;
 }
 
 .buttons button:hover {
@@ -329,3 +331,138 @@
 .containerLogin h2 {
   padding-left: 4em;
 }
+
+/* CSS ELABORACION */
+
+.containerElab {
+  width: 35vw;
+  height: 100vh;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerElab::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1;
+  pointer-events: none;
+}
+.containerElab img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.containerElab h3 {
+  color: white;
+  position: relative;
+  top: -12em;
+  left: 4.5em;
+  z-index: 1;
+  max-width: 12em;
+}
+
+/* MEDIA QUERIES */
+/* HOME */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container img {
+    opacity: 0;
+  }
+  .buttons {
+    margin-left: 0;
+  }
+}
+/* CARTA */
+
+@media (max-width: 1200px) {
+  .containerPhoto {
+    width: 100%;
+    height: 400px;
+  }
+  .containerPhoto img {
+    object-fit: cover;
+  }
+}
+/* BEBIDAS - CAFE */
+
+@media (max-width: 1200px) {
+  .containerCafe {
+    width: 100%;
+    height: 400px;
+  }
+  .containerCafe img {
+    object-fit: cover;
+  }
+}
+
+/* RESPONSABILIDAD */
+
+@media (max-width: 1200px) {
+  .containerResp {
+    width: 100%;
+    height: 400px;
+  }
+  .containerResp img {
+    left: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .containerResp img {
+    left: 30vw;
+  }
+}
+
+/* MERCHANDISING */
+
+@media (max-width: 1200px) {
+  .containerMerchan {
+    width: 100%;
+    height: 400px;
+  }
+
+  .containerMerchan img {
+    object-fit: cover;
+
+  }
+}
+
+
+/* ELABORACION */
+
+@media (max-width: 1200px) {
+  .containerElab {
+    width: 100%;
+    height: 400px;
+  }
+
+  .containerElab img {
+    object-fit: cover;
+
+  }
+}
+
+
+/* LOGIN - REGISTER */
+@media (max-width: 1200px) {
+  .containerLogin {
+    width: 100%;
+    height: 400px;
+  }
+
+  
+}
+
+

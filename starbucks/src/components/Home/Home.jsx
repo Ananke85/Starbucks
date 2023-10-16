@@ -6,6 +6,7 @@ import home2 from "../../assets/home2.png";
 import home3 from "../../assets/home3.jpg";
 import Footer from "../Footer/Footer";
 import SidebarHome from "../Sidebar/SidebarHome.jsx";
+import { CARTA, DELIVERY, ELABORAR } from "../../route-paths";
 
 const Home = () => {
   const news = [
@@ -13,6 +14,7 @@ const Home = () => {
       title: "Carta",
       text: "Bebidas deliciosas y alimentos de gran sabor elaborados con ingredientes sencillos pero de gran calidad.",
       img: home1,
+      link: CARTA,
     },
     {
       title: "Tiendas Starbucks®",
@@ -23,6 +25,7 @@ const Home = () => {
       title: "Cómo preparar café Starbucks®",
       text: "Descubre los distintos métodos de elaboración para preparar tu café Starbucks® perfecto en casa.",
       img: home3,
+      link: ELABORAR,
     },
   ];
 
@@ -30,6 +33,7 @@ const Home = () => {
     <>
       <div className={styles.mainContainer}>
         <SidebarHome />
+
         <div className={styles.container}>
           <img src={banner} alt="pumpkin spice latte is back" />
 
@@ -59,7 +63,14 @@ const Home = () => {
                   ¿Eres más de café, de smoothie, de latte o de Frappuccino®? No
                   esperes más y pide Starbucks® a domicilio o para llevar.
                 </p>
-                <button>Más información</button>
+                <a
+                  href={DELIVERY}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button>Más información</button>
+                </a>
               </div>
             </div>
 
@@ -70,7 +81,9 @@ const Home = () => {
                   <div className={styles.cardText}>
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    <button>Más información</button>
+                    <a href={item.link} style={{ textDecoration: "none" }}>
+                      <button>Más información</button>
+                    </a>
                   </div>
                 </div>
               ))}
