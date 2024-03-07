@@ -178,9 +178,12 @@
   gap: 2em;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
+}
 
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) {
   .mainContainer {
     width: 100vw;
     height: 100%;

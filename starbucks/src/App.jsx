@@ -57,7 +57,6 @@ function App() {
           <Route path={MERCHAN} element={<Merchandising />} />
           <Route path={REWARDS} element={<Rewards />} />
 
-          {/* <Route path={LOCATION} element={<Store />} /> */}
           <Route path={LOGIN} element={<Login />} />
           <Route path={CREATE} element={<Register />} />
         </Routes>

@@ -5,16 +5,16 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 1.1em 1.5em;
-  height: 4em;
+  height: 4rem;
   z-index: 10;
+  padding: 1.1rem 0;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 1.2em;
-  font-size: 0.9em;
+  gap: 1.2rem;
+  font-size: 0.9rem;
   font-family: "Archivo Black", sans-serif;
 }
 .links a {
@@ -28,13 +28,14 @@
 }
 
 .links img {
-  width: 3.2em;
+  width: 3.2rem;
+  margin-left: 2rem;
 }
 
 .buttons {
   display: flex;
-  gap: 1em;
-  margin-right: 3em;
+  gap: 1rem;
+  margin-right: 3rem;
 }
 .buttons button {
   color: var(--grey-dark);
@@ -61,12 +62,12 @@
   opacity: 0.8;
 }
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .container {
-    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .links {
     display: flex;
@@ -75,7 +76,29 @@
   }
   .buttons {
     width: 100%;
-    padding-left: 3em;
-    padding-top: 1em;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .links img {
+    margin-left: 0;
+  }
+  .buttons {
+    width: 100%;
+    margin-left: 4.5rem;
   }
 }

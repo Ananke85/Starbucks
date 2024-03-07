@@ -21,7 +21,7 @@ const SidebarHome = () => {
               consigue bebidas gratis.
             </h3>
           </div>
-          <img src={coffee} alt="coffee app rewards" />
+          <img src={coffee} alt="coffee app rewards" /> 
 
         </div>
         <div className={styles.buttons}>

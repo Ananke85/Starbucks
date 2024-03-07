@@ -1,12 +1,12 @@
-.container {
+/* .container {
   background: linear-gradient(to bottom, var(--green-light), var(--green-dark));
   width: 35vw;
-  height: 100vh;
+  height: 105vh;
   position: relative;
   font-family: "Archivo Black", sans-serif;
-}
+} */
 
-.container::before {
+/* .container::before {
   content: "";
   background-image: url(C:\Users\anank\documents\Ananke85\Starbucks\starbucks\src\assets\stars.png);
   background-size: 87%;
@@ -16,14 +16,34 @@
   position: absolute;
   width: 130%;
   height: 80%;
-  top: -1.7em;
-  left: -3.7em;
+  top: -1.7rem;
+  left: -3.7rem;
+} */
+.container {
+  background: linear-gradient(to bottom, var(--green-light), var(--green-dark));
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.container::before {
+  content: "";
+  background-image: url(C:\Users\anank\documents\Ananke85\Starbucks\starbucks\src\assets\stars.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  left: -1rem;
 }
 
 .container img {
-  width: 25em;
+  width: 25rem;
   position: absolute;
-  left: 4vw;
+  left: 4rem;
   bottom: 0;
   opacity: 0.5;
   pointer-events: none;
@@ -34,13 +54,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding: 3rem;
   text-align: center;
   color: var(--green);
 }
 
 .title h1 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .plainText h2 {
@@ -48,17 +68,16 @@
 }
 
 .brillar {
-  font-size: 4.5em;
+  font-size: 3.5rem;
   position: relative;
-  top: -1em;
-  line-height: 1em;
+  top: -1rem;
 }
 
 .plainText h3 {
   font-family: "SoDoSans";
   position: relative;
-  top: -3em;
-  font-size: 1.3em;
+  top: -3rem;
+  font-size: 1.3rem;
 }
 
 .plainText strong {
@@ -70,10 +89,10 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin-left: 5em;
+  gap: 1rem;
+  margin-left: 5rem;
   position: relative;
-  top: -5em;
+  top: -5rem;
 }
 
 .buttons button {
@@ -85,9 +104,401 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .container img {
+    left: 5rem;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+  }
+  .text {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  .container::before {
+    z-index: 0;
+    top: -1rem;
+    height: 110%;
+  }
+  .container img {
+    width: 40%;
+    position: absolute;
+    left: 27rem;
+    bottom: 0;
+    z-index: 2;
+  }
+  .buttons {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+}
+
+/* CSS CARTA */
+
+.containerPhoto {
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerPhoto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1;
+  pointer-events: none;
+}
+.containerPhoto img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.buttonsCarta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 4rem;
+  position: relative;
+  top: -12rem;
+}
+
+.buttonsCarta button {
+  border-color: white;
+  z-index: 5;
+}
+
+.buttonsCarta button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.containerPhoto h3 {
+  color: white;
+  position: relative;
+  top: -13rem;
+  left: 4.5rem;
+  z-index: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerPhoto {
+    width: 100%;
+  }
+  .containerPhoto img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerPhoto {
+    width: 100%;
+    height: 25rem;
+  }
+  .containerPhoto img {
+    object-fit: cover;
+  }
+}
+
+/* CSS CAFE */
+
+.containerCafe {
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerCafe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1;
+  pointer-events: none;
+}
+.containerCafe img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.containerCafe h3 {
+  color: white;
+  position: relative;
+  top: -16rem;
+  left: 4.5rem;
+  z-index: 1;
+}
+
+.containerCafe h2 {
+  color: white;
+  position: relative;
+  top: -11rem;
+  left: 3rem;
+  z-index: 1;
+}
+
+.buttonsCafe {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 4.5rem;
+  position: relative;
+  top: -15rem;
+}
+
+.buttonsCafe button,
+.buttonsCafe a {
+  color: white;
+  border-color: white;
+  z-index: 5;
+}
+
+.buttonsCafe button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerCafe {
+    width: 100%;
+  }
+  .containerCafe img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerCafe {
+    width: 100%;
+    height: 25rem;
+  }
+  .containerCafe img {
+    object-fit: cover;
+  }
+}
+/* CSS RESPONSABILIDAD */
+
+.containerResp {
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  background-color: var(--green-medium);
+  overflow: hidden;
+}
+
+.containerResp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--filter), rgba(0, 0, 0, 0.7));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.containerResp img {
+  width: 15rem;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  z-index: 2;
+}
+
+.containerResp h3 {
+  color: white;
+  position: relative;
+  top: 24rem;
+  left: 4.5rem;
+  z-index: 2;
+}
+
+/* CSS MERCHANDISING */
+
+.containerMerchan {
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerMerchan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1;
+  pointer-events: none;
+}
+.containerMerchan img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.containerMerchan h3 {
+  color: white;
+  position: relative;
+  top: -12rem;
+  left: 4.5rem;
+  z-index: 1;
+}
+
+/* CSS LOGIN/REGISTER */
+
+.containerLogin {
+  background-color: var(--green-light);
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.containerLogin h2 {
+  padding-left: 4rem;
+}
+
+/* CSS ELABORACION */
+
+.containerElab {
+  width: 35%;
+  height: 45rem;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.containerElab::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--filter));
+  z-index: 1;
+  pointer-events: none;
+}
+.containerElab img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.containerElab h3 {
+  color: white;
+  position: relative;
+  top: -12rem;
+  left: 4.5rem;
+  z-index: 1;
+  max-width: 12rem;
+}
+
+/* MEDIA QUERIES */
+/* HOME */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/* CARTA */
+
+
+/* BEBIDAS - CAFE */
+
+
+
+/* RESPONSABILIDAD */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerResp {
+    width: 100%;
+    height: 400px;
+  }
+  .containerResp img {
+    left: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .containerResp img {
+    left: 30vw;
+  }
+}
+
+/* MERCHANDISING */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerMerchan {
+    width: 100%;
+    height: 400px;
+  }
+
+  .containerMerchan img {
+    object-fit: cover;
+  }
+}
+
+/* ELABORACION */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerElab {
+    width: 100%;
+    height: 400px;
+  }
+
+  .containerElab img {
+    object-fit: cover;
+  }
+}
+
+/* LOGIN - REGISTER */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerLogin {
+    width: 100%;
+    height: 400px;
+  }
+}
+
 /* STARS CSS */
 
-.star {
+/* .star {
   margin: 50px 0;
   position: relative;
   display: block;
@@ -127,342 +538,4 @@
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: "";
-}
-
-/* CSS CARTA */
-
-.containerPhoto {
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.containerPhoto::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--filter));
-  z-index: 1;
-  pointer-events: none;
-}
-.containerPhoto img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.buttonsCarta {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin-left: 5em;
-  position: relative;
-  top: -15em;
-}
-
-.buttonsCarta button {
-  border-color: white;
-  z-index: 5;
-}
-
-.buttonsCarta button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.containerPhoto h3 {
-  color: white;
-  position: relative;
-  top: -13em;
-  left: 4.5em;
-  z-index: 1;
-}
-
-/* CSS CAFE */
-
-.containerCafe {
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.containerCafe::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--filter));
-  z-index: 1;
-  pointer-events: none;
-}
-.containerCafe img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.containerCafe h3 {
-  color: white;
-  position: relative;
-  top: -16em;
-  left: 4.5em;
-  z-index: 1;
-}
-
-.containerCafe h2 {
-  color: white;
-  position: relative;
-  top: -11em;
-  left: 3em;
-  z-index: 1;
-}
-
-.buttonsCafe {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  margin-left: 5em;
-  position: relative;
-  top: -18em;
-}
-
-.buttonsCafe button,
-.buttonsCafe a {
-  color: white;
-  border-color: white;
-  z-index: 5;
-}
-
-.buttonsCafe button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* CSS RESPONSABILIDAD */
-
-.containerResp {
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-  background-color: var(--green-medium);
-  overflow: hidden;
-}
-
-.containerResp::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--filter), rgba(0, 0, 0, 0.7));
-  z-index: 1;
-  pointer-events: none;
-}
-
-.containerResp img {
-  width: 15em;
-  position: absolute;
-  top: 15%;
-  left: 25%;
-  z-index: 2;
-}
-
-.containerResp h3 {
-  color: white;
-  position: relative;
-  top: 24em;
-  left: 4.5em;
-  z-index: 2;
-}
-
-/* CSS MERCHANDISING */
-
-.containerMerchan {
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.containerMerchan::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--filter));
-  z-index: 1;
-  pointer-events: none;
-}
-.containerMerchan img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.containerMerchan h3 {
-  color: white;
-  position: relative;
-  top: -12em;
-  left: 4.5em;
-  z-index: 1;
-}
-
-/* CSS LOGIN/REGISTER */
-
-.containerLogin {
-  background-color: var(--green-light);
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-  display: flex;
-  align-items: center;
-}
-
-.containerLogin h2 {
-  padding-left: 4em;
-}
-
-/* CSS ELABORACION */
-
-.containerElab {
-  width: 35vw;
-  height: 100vh;
-  position: relative;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.containerElab::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, var(--filter));
-  z-index: 1;
-  pointer-events: none;
-}
-.containerElab img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.containerElab h3 {
-  color: white;
-  position: relative;
-  top: -12em;
-  left: 4.5em;
-  z-index: 1;
-  max-width: 12em;
-}
-
-/* MEDIA QUERIES */
-/* HOME */
-
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container img {
-    opacity: 0;
-  }
-  .buttons {
-    margin-left: 0;
-  }
-}
-/* CARTA */
-
-@media (max-width: 1200px) {
-  .containerPhoto {
-    width: 100%;
-    height: 400px;
-  }
-  .containerPhoto img {
-    object-fit: cover;
-  }
-}
-/* BEBIDAS - CAFE */
-
-@media (max-width: 1200px) {
-  .containerCafe {
-    width: 100%;
-    height: 400px;
-  }
-  .containerCafe img {
-    object-fit: cover;
-  }
-}
-
-/* RESPONSABILIDAD */
-
-@media (max-width: 1200px) {
-  .containerResp {
-    width: 100%;
-    height: 400px;
-  }
-  .containerResp img {
-    left: 40vw;
-  }
-}
-@media (max-width: 800px) {
-  .containerResp img {
-    left: 30vw;
-  }
-}
-
-/* MERCHANDISING */
-
-@media (max-width: 1200px) {
-  .containerMerchan {
-    width: 100%;
-    height: 400px;
-  }
-
-  .containerMerchan img {
-    object-fit: cover;
-
-  }
-}
-
-
-/* ELABORACION */
-
-@media (max-width: 1200px) {
-  .containerElab {
-    width: 100%;
-    height: 400px;
-  }
-
-  .containerElab img {
-    object-fit: cover;
-
-  }
-}
-
-
-/* LOGIN - REGISTER */
-@media (max-width: 1200px) {
-  .containerLogin {
-    width: 100%;
-    height: 400px;
-  }
-
-  
-}
-
-
+} */

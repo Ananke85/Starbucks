@@ -1,32 +1,29 @@
 .mainContainer {
-  height: 700px;
+  height: 45rem;
+  display: flex;
   overflow-y: hidden;
   z-index: -1;
 }
 
 .container {
-  width: 65vw;
+  width: 66vw;
   position: absolute;
-  left: 35vw;
-  top: 5.2em;
+  left: 35%;
   color: var(--grey-medium);
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 45rem;
 }
 .container img {
-  width: 85%;
+  width: 88%;
   position: relative;
-  left: 3em;
-  top: 1em;
+  left: 3rem;
+  top: 1rem;
 }
 .content {
-  padding: 1em 4em 2em 3em;
+  padding: 1rem 4rem 2rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 3rem;
 }
 
 .title {
@@ -40,31 +37,25 @@
   text-decoration: underline;
   text-transform: uppercase;
 }
-
 .titleCafe:hover {
   color: var(--grey-dark);
 }
 .intro {
-  max-width: 43em;
+  max-width: 43rem;
 }
-
 .cafesList {
-  max-width: 43em;
+  max-width: 43rem;
 }
-
 .secondIntro {
   font-weight: 400;
 }
-
 .introBlack {
   color: var(--grey-dark);
 }
-
 .buttonsCafe {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
 }
-
 .blend h3 {
   color: var(--grey-dark);
 }
@@ -73,10 +64,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2em;
+  gap: 2rem;
   justify-content: start;
-  position: relative;
-  left: -3em;
+  margin-left: -3rem;
 }
 
 .container button {
@@ -90,37 +80,117 @@
 
 /* CAFE SUAVE CSS */
 .mainContainer {
-  height: 700px;
+  height: 45rem;
   overflow-y: hidden;
   z-index: -1;
 }
 
 .container {
-  width: 65vw;
+  width: 66vw;
   position: absolute;
-  left: 35vw;
-  top: 5.2em;
+  left: 35%;
   color: var(--grey-medium);
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 45rem;
 }
 .column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4em;
-  margin-top: 2em;
+  gap: 4rem;
+  margin-top: 2rem;
   width: 95%;
 }
 
 .column img {
+  display: block;
   width: 100%;
 }
 
 .content a {
-  margin-top: 2em;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mainContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    top: 59.5rem;
+    left: 0;
+  }
+  .content {
+    padding: 0 2rem 5rem 2rem;
+  }
+  .column {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+  }
+  .column img {
+    width: 80%;
+    margin-left: -1rem;
+  }
+  .content button {
+    margin-top: -2rem;
+  }
+  .buttonsCafe {
+    margin-top: 2rem;
+  }
+  .blendContainer {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .blendContainer img {
+    margin-left: -3.5rem;
+  }
+  .blendContainer button {
+    margin-top: 2rem;
+  }
+  .container img {
+    margin-left: -1.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .mainContainer {
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+    left: 0;
+    top: 33rem;
+    overflow-x: hidden;
+  }
+  .column {
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    margin-top: 1;
+    gap: 2rem;
+  }
+
+  .column img {
+    width: 100%;
+    left: 0;
+  }
+  .content {
+    justify-content: center;
+    padding: 0 3rem 3rem 3rem;
+  }
+  .content button {
+    margin-top: -2rem;
+  }
+  .blendContainer button {
+    margin-top: 2rem;
+  }
 }
 
 /* CSS ELABORACIONES */
@@ -134,7 +204,6 @@
   font-weight: normal;
 }
 
-
 .titleElab {
   color: var(--grey-dark);
   font-weight: bold;
@@ -142,7 +211,7 @@
 .titleElab p {
   margin-bottom: -0.1px;
   margin-top: -0.1px;
-  color: var(--grey-medium)
+  color: var(--grey-medium);
 }
 
 .nonBold {
@@ -155,7 +224,6 @@
   gap: 3em;
   width: 95%;
   margin-top: -2em;
-
 }
 
 .columnElab img {
@@ -168,54 +236,8 @@
   grid-column: span 2;
   position: relative;
   top: -3em;
-
 }
 
 .blank {
-  border: 2em solid var(--grey-light)
+  border: 2em solid var(--grey-light);
 }
-
-
-
-@media (max-width: 1200px) {
-  .mainContainer {
-    width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  .container {
-    width: 100vw;
-    left: 0;
-    top: 570px;
-    overflow-x: hidden;
-  
-  }
-  .column {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } 
-  .column img {
-    display: block;
-    width: 40%;
-    left: 0;
-  } 
-  
-
-  
-}
-@media (max-width: 800px) {
-  .blendContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    left: 0;
-
-  }
-  .blendContainer img {
-    left: -1em;
-  }
-}
-
-
