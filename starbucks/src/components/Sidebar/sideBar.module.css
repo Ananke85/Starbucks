@@ -304,6 +304,10 @@
   font-family: "Archivo Black", sans-serif;
   background-color: var(--green-medium);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .containerResp::before {
@@ -319,19 +323,33 @@
 }
 
 .containerResp img {
-  width: 15rem;
-  position: absolute;
-  top: 15%;
-  left: 25%;
+  width: 20rem;
   z-index: 2;
 }
 
 .containerResp h3 {
   color: white;
-  position: relative;
-  top: 24rem;
-  left: 4.5rem;
   z-index: 2;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerResp {
+    width: 100%;
+  }
+  .containerResp h3 {
+    width: 15rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerResp {
+    width: 100%;
+    height: 25rem;
+  }
+  .containerResp img {
+    object-fit: cover;
+  }
 }
 
 /* CSS MERCHANDISING */
@@ -368,6 +386,22 @@
   z-index: 1;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerMerchan {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerMerchan {
+    width: 100%;
+    height: 25rem;
+  }
+  .containerMerchan img {
+    object-fit: cover;
+  }
+}
+
 /* CSS LOGIN/REGISTER */
 
 .containerLogin {
@@ -382,6 +416,22 @@
 
 .containerLogin h2 {
   padding-left: 4rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerLogin {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .containerMerchan {
+    width: 100%;
+    height: 25rem;
+  }
+  .containerMerchan img {
+    object-fit: cover;
+  }
 }
 
 /* CSS ELABORACION */
@@ -419,58 +469,17 @@
   max-width: 12rem;
 }
 
-/* MEDIA QUERIES */
-/* HOME */
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-/* CARTA */
-
-
-/* BEBIDAS - CAFE */
 
 
 
-/* RESPONSABILIDAD */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .containerResp {
-    width: 100%;
-    height: 400px;
-  }
-  .containerResp img {
-    left: 40vw;
-  }
-}
-@media (max-width: 800px) {
-  .containerResp img {
-    left: 30vw;
-  }
-}
-
-/* MERCHANDISING */
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .containerMerchan {
-    width: 100%;
-    height: 400px;
-  }
-
-  .containerMerchan img {
-    object-fit: cover;
-  }
-}
 
 /* ELABORACION */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .containerElab {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -478,23 +487,12 @@
     width: 100%;
     height: 400px;
   }
-
   .containerElab img {
     object-fit: cover;
   }
 }
 
-/* LOGIN - REGISTER */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-}
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  .containerLogin {
-    width: 100%;
-    height: 400px;
-  }
-}
 
 /* STARS CSS */
 

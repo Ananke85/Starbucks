@@ -4,7 +4,7 @@ const SidebarRegister = () => {
   return (
     <>
       <div className={styles.containerLogin}>
-        <h2>Crear una cuenta</h2>
+        <h2>Crea una cuenta</h2>
       </div>
     </>
   );

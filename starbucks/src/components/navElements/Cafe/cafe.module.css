@@ -176,7 +176,6 @@
     margin-top: 1;
     gap: 2rem;
   }
-
   .column img {
     width: 100%;
     left: 0;
@@ -196,7 +195,7 @@
 /* CSS ELABORACIONES */
 
 .contentElab {
-  padding: 2em 4em 2em 3em;
+  padding: 2rem 4rem 2rem 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -221,13 +220,14 @@
 .columnElab {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  gap: 3em;
+  gap: 3rem;
   width: 95%;
-  margin-top: -2em;
+  margin-top: -2rem;
 }
 
 .columnElab img {
-  max-width: 5em;
+  display: block;
+  max-width: 5rem;
 }
 
 .line {
@@ -235,9 +235,24 @@
   opacity: 0.4;
   grid-column: span 2;
   position: relative;
-  top: -3em;
+  top: -3rem;
 }
 
 .blank {
-  border: 2em solid var(--grey-light);
+  border: 2rem solid var(--grey-light);
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contentElab {
+    padding: 2rem 2rem 2rem 3rem;
+  }
+  .columnElab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columnElab img {
+    margin-left: -5rem;
+  }
+}
+

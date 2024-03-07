@@ -1,20 +1,17 @@
 .mainContainer {
-  height: 700px;
+  height: 45rem;
   overflow-y: hidden;
   z-index: -1;
+  display: flex;
 }
 
 .container {
-  width: 65vw;
+  width: 66vw;
   position: absolute;
-  left: 35vw;
-  top: 5.2em;
+  left: 35%;
   color: var(--grey-medium);
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 45rem;
 }
 
 .content {
@@ -69,25 +66,35 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  
+  .mainContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    top: 61rem;
+    left: 0;
+  }
+  .content {
+    padding: 0 2rem 5rem 2rem;
+  }
 }
-
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .mainContainer {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: fit-content;
     overflow-x: hidden;
-    z-index: 2;
   }
   .container {
-    width: 100vw;
+    width: 100%;
     left: 0;
-    top: 570px;
+    top: 33rem;
     overflow-x: hidden;
+    z-index: -1;
   }
   .content {
-    width: 90%;
+    padding: 1em 3em 5em 3em;
   }
   .delivers {
     display: flex;

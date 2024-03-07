@@ -1,31 +1,32 @@
 .mainContainer {
-  height: 700px;
+  height: 45rem;
   overflow-y: hidden;
   z-index: -1;
+  display: flex;
 }
 .container {
-  width: 65vw;
+  width: 66vw;
   position: absolute;
-  left: 35vw;
-  top: 6.2em;
+  left: 35%;
   color: var(--grey-medium);
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 45rem;
 }
 
 .content {
-  padding: 1em 4em 5em 3em;
+  padding: 1rem 4rem 5rem 3rem;
+  z-index: -1;
 }
 
 .respons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .card {
-  width: 23em;
+  width: 23rem;
   background-color: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -34,7 +35,7 @@
 }
 
 .cardText {
-  padding: 0 1.5em 1.5em 1.5em;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .cardText h3 {
   font-weight: 400;
@@ -68,29 +69,40 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .mainContainer {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .container {
+    width: 100%;
+    top: 61rem;
+    left: 0;
+  }
+  .content {
+    padding: 0 2rem 5rem 2rem;
+  }
   
 }
 
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .mainContainer {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: fit-content;
     overflow-x: hidden;
-    z-index: 2;
+    z-index: -1;
   }
   .container {
-    width: 100vw;
+    width: 100%;
     left: 0;
-    top: 570px;
+    top: 33rem;
     overflow-x: hidden;
   }
   .content {
-    width: 90%;
+    width: 95%;
+    padding: 0 2rem 5rem 2rem
   }
-  .respons {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-  }
+ .respons {
+  justify-content: center;
+ }
 }
