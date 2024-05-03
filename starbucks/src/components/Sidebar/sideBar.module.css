@@ -98,6 +98,7 @@
 .buttons button {
   border-color: white;
   z-index: 1;
+  color: var(--grey-light)
 }
 
 .buttons button:hover {
