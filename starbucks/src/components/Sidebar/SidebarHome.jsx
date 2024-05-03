@@ -1,4 +1,4 @@
-import styles from "./sidebar.module.css";
+import styles from "./sideBar.module.css";
 import coffee from "../../assets/coffee.png";
 import { REWARDS } from "../../route-paths";
 
